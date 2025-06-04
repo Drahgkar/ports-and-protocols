@@ -2,6 +2,7 @@ Port,Protocol,Service,Note,Reference
 0,tcp,,Reserved,
 0,udp,,Reserved,
 1,tcp,tcpmux,TCP Port Service Multiplexer,
+1,tcp,,Melsec Q - PLC TCP port configuration,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
 1,udp,tcpmux,TCP Port Service Multiplexer,
 2,tcp,,Reserved,
 2,udp,,Reserved,
@@ -14,6 +15,7 @@ Port,Protocol,Service,Note,Reference
 6,tcp,,Unassigned,
 6,udp,,Unassigned,
 7,tcp,echo,Echo,"Postel, J. (1983). RFC 862: Echo Protocol. Internet Engineering Task Force (IETF). Retrieved from https://datatracker.ietf.org/doc/html/rfc862"
+7,tcp,echo,Pulse (network connectivity),Lantronix Local Manager 6.7 "https://docs.lantronix.com/products/lmos/6.7/local-manager/"
 7,udp,echo,Echo,"Postel, J. (1983). RFC 862: Echo Protocol. Internet Engineering Task Force (IETF). Retrieved from https://datatracker.ietf.org/doc/html/rfc862"
 8,tcp,,Unassigned,
 8,udp,,Unassigned,
@@ -55,6 +57,7 @@ Port,Protocol,Service,Note,Reference
 24,tcp,,any private mail system,
 24,udp,,any private mail system,
 25,tcp,smtp,Simple Mail Transfer,
+25,tcp,smtp,Email(AlarmsWithEmailNotification) (PushAgent and MQTTLogic) Standard,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
 25,udp,smtp,Simple Mail Transfer,
 26,tcp,,Unassigned,
 26,udp,,Unassigned,
@@ -82,6 +85,8 @@ Port,Protocol,Service,Note,Reference
 37,udp,time,Time,
 38,tcp,rap,Route Access Protocol,
 38,udp,rap,Route Access Protocol,
+39,,,AD,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
+39,,,LDAP,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
 39,tcp,rlp,Resource Location Protocol,
 39,udp,rlp,Resource Location Protocol,
 40,tcp,,Unassigned,
@@ -120,6 +125,7 @@ Port,Protocol,Service,Note,Reference
 56,tcp,xns-auth,XNS Authentication,
 56,udp,xns-auth,XNS Authentication,
 57,tcp,,any private terminal access,
+57,tcp,smtp,Email(AlarmsWithEmailNotification) (PushAgent and MQTTLogic) Standard,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
 57,udp,,any private terminal access,
 58,tcp,xns-mail,XNS Mail,
 58,udp,xns-mail,XNS Mail,
@@ -173,6 +179,7 @@ Port,Protocol,Service,Note,Reference
 80,tcp,http,World Wide Web HTTP,
 80,tcp,www-http,World Wide Web HTTP,
 80,tcp,www,World Wide Web HTTP,
+80,tcp,,WebPresentationEngine,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
 80,udp,http,World Wide Web HTTP,
 80,udp,www-http,World Wide Web HTTP,
 80,udp,www,World Wide Web HTTP,
@@ -218,6 +225,8 @@ Port,Protocol,Service,Note,Reference
 101,udp,hostname,NIC Host Name Server,
 102,tcp,iso-tsap,ISO-TSAP Class 0,
 102,udp,iso-tsap,ISO-TSAP Class 0,
+102,tcp,,S7 TCP,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
+102,tcp,,S7 TIA,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
 103,tcp,gppitnp,Genesis Point-to-Point Trans Net,
 103,udp,gppitnp,Genesis Point-to-Point Trans Net,
 104,tcp,acr-nema,ACR-NEMA Digital Imag. & Comm. 300,
@@ -262,6 +271,7 @@ Port,Protocol,Service,Note,Reference
 122,udp,smakynet,SMAKYNET,
 123,tcp,ntp,Network Time Protocol,
 123,udp,ntp,Network Time Protocol,
+123,udp,sntp,Simple Network Time Protocol,Rockwell FactoryTalk Remote Access Manager clock synchronization "https://www.rockwellautomation.com/en-in/docs/factorytalk-remote-access/current/factorytalk-remote-access-help-ditamap/quick-reference-guide/what-are-the-main-protocol-settings-.html"
 124,tcp,ansatrader,ANSA REX Trader,
 124,udp,ansatrader,ANSA REX Trader,
 125,tcp,locus-map,Locus PC-Interface Net Map Ser,
@@ -811,6 +821,7 @@ Port,Protocol,Service,Note,Reference
 442,udp,cvc-hostd,"IANA assigned this well-formed service name as a replacement for ""cvc_hostd"".",
 443,sctp,https,HTTPS,
 443,tcp,https,http protocol over TLS/SSL,
+443,tcp,,WebPresentationEngine,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
 443,udp,https,http protocol over TLS/SSL,
 444,tcp,snpp,Simple Network Paging Protocol,
 444,udp,snpp,Simple Network Paging Protocol,
@@ -857,6 +868,7 @@ Port,Protocol,Service,Note,Reference
 465,tcp,submissions,Message Submission over TLS protocol,
 465,tcp,urd,URL Rendezvous Directory for SSM,
 465,udp,igmpv3lite,IGMP over UDP for SSM,
+465,tcp,smtp,Email(AlarmsWithEmailNotification) (PushAgent and MQTTLogic) Standard,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
 466,tcp,digital-vrc,digital-vrc,
 466,udp,digital-vrc,digital-vrc,
 467,tcp,mylex-mapd,mylex-mapd,
@@ -930,6 +942,7 @@ Port,Protocol,Service,Note,Reference
 501,tcp,stmf,STMF,
 501,udp,stmf,STMF,
 502,tcp,mbap,Modbus Application Protocol,
+502,tcp,,Modbus,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
 502,udp,mbap,Modbus Application Protocol,
 503,tcp,intrinsa,Intrinsa,
 503,udp,intrinsa,Intrinsa,
@@ -1419,6 +1432,7 @@ Port,Protocol,Service,Note,Reference
 770,tcp,cadlock,,
 770,udp,cadlock,,
 771,tcp,rtip,,
+771,tcp,,Digi device discovery,Rockwell Digi device discovery "https://hub.digi.com/dp/path=/support/asset/application-guide--remote-cellular-tcpip-access-to-rockwell-ethernet-and-serial-devices/"
 771,udp,rtip,,
 772,tcp,cycleserv2,,
 772,udp,cycleserv2,,
@@ -1474,6 +1488,7 @@ Port,Protocol,Service,Note,Reference
 848,tcp,gdoi,GDOI,
 848,udp,gdoi,GDOI,
 849-852,,,Unassigned,
+851,tcp,,TwinCAT,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
 853,tcp,domain-s,DNS query-response protocol run over TLS,
 853,udp,domain-s,DNS query-response protocol run over DTLS or QUIC,
 854,tcp,dlep,Dynamic Link Exchange Protocol (DLEP),
@@ -1596,6 +1611,7 @@ Port,Protocol,Service,Note,Reference
 1033,tcp,netinfo-local,local netinfo port,
 1033,udp,netinfo-local,local netinfo port,
 1034,tcp,activesync,ActiveSync Notifications,
+1034,tcp,,Melsec FX3U - PLC TCP port configuration,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
 1034,udp,activesync,ActiveSync Notifications,
 1035,tcp,mxxrlogin,MX-XR RPC,
 1035,udp,mxxrlogin,MX-XR RPC,
@@ -1670,7 +1686,7 @@ Port,Protocol,Service,Note,Reference
 1068,udp,instl-bootc,"IANA assigned this well-formed service name as a replacement for ""instl_bootc"".",
 1068,udp,instl_bootc,Installation Bootstrap Proto. Cli.,
 1069,tcp,cognex-insight,COGNEX-INSIGHT,
-1069,udp,cognex-insight,COGNEX-INSIGHT,
+1069,udp,cognex-insight,COGNEX-INSIGHT, Cognex devices "https://technicaldocs.nozominetworks.com/products/discovery/autogenerated/topics/r_discovery_strategies_cognex.html"
 1070,tcp,gmrupdateserv,GMRUpdateSERV,
 1070,udp,gmrupdateserv,GMRUpdateSERV,
 1071,tcp,bsquare-voip,BSQUARE-VOIP,
@@ -1969,6 +1985,7 @@ Port,Protocol,Service,Note,Reference
 1216,tcp,etebac5,ETEBAC 5,
 1216,udp,etebac5,ETEBAC 5,
 1217,tcp,hpss-ndapi,HPSS NonDCE Gateway,
+1217,tcp,,CODESYS,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
 1217,udp,hpss-ndapi,HPSS NonDCE Gateway,
 1218,tcp,aeroflight-ads,AeroFlight-ADs,
 1218,udp,aeroflight-ads,AeroFlight-ADs,
@@ -2410,6 +2427,7 @@ Port,Protocol,Service,Note,Reference
 1432,udp,blueberry-lm,Blueberry Software License Manager,
 1433,tcp,ms-sql-s,Microsoft-SQL-Server,
 1433,udp,ms-sql-s,Microsoft-SQL-Server,
+1433,,,SQL/SQL Express,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
 1434,tcp,ms-sql-m,Microsoft-SQL-Monitor,
 1434,udp,ms-sql-m,Microsoft-SQL-Monitor,
 1435,tcp,ibm-cics,IBM CICS,
@@ -3329,6 +3347,7 @@ Port,Protocol,Service,Note,Reference
 1882,tcp,ecsqdmn,CA eTrust Common Services,
 1882,udp,ecsqdmn,CA eTrust Common Services,
 1883,tcp,mqtt,Message Queuing Telemetry Transport Protocol,
+1883,tcp,,MQTT (PushAgent and MQTTLogic) Standard,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
 1883,udp,mqtt,Message Queuing Telemetry Transport Protocol,
 1884,tcp,idmaps,Internet Distance Map Svc,
 1884,udp,idmaps,Internet Distance Map Svc,
@@ -3364,6 +3383,7 @@ Port,Protocol,Service,Note,Reference
 1899,udp,mc2studios,MC2Studios,
 1900,tcp,ssdp,SSDP,
 1900,udp,ssdp,SSDP,
+1900,udp,,UPnP protocol,Multi-vendor devices "https://technicaldocs.nozominetworks.com/products/discovery/autogenerated/topics/r_discovery_strategies_upnp.html"
 1901,tcp,fjicl-tep-a,Fujitsu ICL Terminal Emulator Program A,
 1901,udp,fjicl-tep-a,Fujitsu ICL Terminal Emulator Program A,
 1902,tcp,fjicl-tep-b,Fujitsu ICL Terminal Emulator Program B,
@@ -3386,6 +3406,7 @@ Port,Protocol,Service,Note,Reference
 1910,udp,ultrabac,UltraBac Software communications port,
 1911,tcp,mtp,Starlight Networks Multimedia Transport Protocol,
 1911,udp,mtp,Starlight Networks Multimedia Transport Protocol,
+1911,udp,,FOX protocol,Tridium devices "https://technicaldocs.nozominetworks.com/products/discovery/autogenerated/topics/r_discovery_strategies_fox.html"
 1912,tcp,rhp-iibp,rhp-iibp,
 1912,udp,rhp-iibp,rhp-iibp,
 1913,tcp,armadp,armadp,
@@ -3569,6 +3590,7 @@ Port,Protocol,Service,Note,Reference
 2000,tcp,cisco-sccp,Cisco SCCP,
 2000,udp,cisco-sccp,Cisco SCCp,
 2001,tcp,dc,,
+2001,tcp,telnet,Telnet Access,Rockwell "https://hub.digi.com/dp/path=/support/asset/application-guide--remote-cellular-tcpip-access-to-rockwell-ethernet-and-serial-devices/"
 2001,udp,wizard,curry,
 2002,tcp,globe,,
 2002,udp,globe,,
@@ -3773,6 +3795,7 @@ Port,Protocol,Service,Note,Reference
 2100,tcp,amiganetfs,Amiga Network Filesystem,
 2100,udp,amiganetfs,Amiga Network Filesystem,
 2101,tcp,rtcm-sc104,rtcm-sc104,
+2101,tcp,,Raw TCP encapsulation for serial data,Rockwell "https://hub.digi.com/dp/path=/support/asset/application-guide--remote-cellular-tcpip-access-to-rockwell-ethernet-and-serial-devices/"
 2101,udp,rtcm-sc104,rtcm-sc104,
 2102,tcp,zephyr-srv,Zephyr server,
 2102,udp,zephyr-srv,Zephyr server,
@@ -4010,8 +4033,11 @@ Port,Protocol,Service,Note,Reference
 2221,tcp,ethernet-ip-s,EtherNet/IP over TLS,
 2221,udp,ethernet-ip-s,EtherNet/IP over DTLS,
 2222,tcp,EtherNet/IP-1,EtherNet/IP I/O,
+2222,tcp,,CSPv4,Rockwell SLC5/05 "https://hub.digi.com/dp/path=/support/asset/application-guide--remote-cellular-tcpip-access-to-rockwell-ethernet-and-serial-devices/"
+2222,tcp,,Reverse SSH,Lantronix Control Center Azure deployment "https://docs.lantronix.com/products/lmos/6.7/control-center/installation-and-configuration/microsoft-azure-control-center-deployment/"
 2222,tcp,EtherNet-IP-1,"IANA assigned this well-formed service name as a replacement for ""EtherNet/IP-1"".",
 2222,udp,EtherNet/IP-1,EtherNet/IP I/O,
+2222,udp,,,Rockwell ControlLogix "https://hub.digi.com/dp/path=/support/asset/application-guide--remote-cellular-tcpip-access-to-rockwell-ethernet-and-serial-devices/"
 2222,udp,EtherNet-IP-1,"IANA assigned this well-formed service name as a replacement for ""EtherNet/IP-1"".",
 2223,tcp,rockwell-csp2,Rockwell CSP2,
 2223,udp,rockwell-csp2,Rockwell CSP2,
@@ -4057,6 +4083,7 @@ Port,Protocol,Service,Note,Reference
 2243,tcp,magicom,Magicom Protocol,
 2243,udp,magicom,Magicom Protocol,
 2244,tcp,nmsserver,NMS Server,
+2244,tcp,,Reverse SSH,Lantronix Control Center Azure deployment "https://docs.lantronix.com/products/lmos/6.7/control-center/installation-and-configuration/network-services/"
 2244,udp,nmsserver,NMS Server,
 2245,tcp,hao,HaO,
 2245,udp,hao,HaO,
@@ -4786,6 +4813,8 @@ Port,Protocol,Service,Note,Reference
 2600,tcp,hpstgmgr,HPSTGMGR,
 2600,udp,hpstgmgr,HPSTGMGR,
 2601,tcp,discp-client,discp client,
+2601,tcp,ssl,Secure Socket,Rockwell Digi Connect WAN RG "https://hub.digi.com/dp/path=/support/asset/application-guide--remote-cellular-tcpip-access-to-rockwell-ethernet-and-serial-devices/"
+2601,tcp,ssl,Secure Socket,Rockwell Digi Connect WAN VPN "https://hub.digi.com/dp/path=/support/asset/application-guide--remote-cellular-tcpip-access-to-rockwell-ethernet-and-serial-devices/"
 2601,udp,discp-client,discp client,
 2602,tcp,discp-server,discp server,
 2602,udp,discp-server,discp server,
@@ -6228,6 +6257,7 @@ Port,Protocol,Service,Note,Reference
 3305,tcp,odette-ftp,ODETTE-FTP,
 3305,udp,odette-ftp,ODETTE-FTP,
 3306,tcp,mysql,MySQL,
+3306,,,MySQL,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
 3306,udp,mysql,MySQL,
 3307,tcp,opsession-prxy,OP Session Proxy,
 3307,udp,opsession-prxy,OP Session Proxy,
@@ -7013,6 +7043,7 @@ Port,Protocol,Service,Note,Reference
 3701,udp,netcelera,NetCelera,
 3702,tcp,ws-discovery,Web Service Discovery,
 3702,udp,ws-discovery,Web Service Discovery,
+3702,udp,,ONVIF protocol,Multi-vendor devices (mostly CCTV cameras) "https://technicaldocs.nozominetworks.com/products/discovery/autogenerated/topics/r_discovery_strategies_onvif.html"
 3703,tcp,adobeserver-3,Adobe Server 3,
 3703,udp,adobeserver-3,Adobe Server 3,
 3704,tcp,adobeserver-4,Adobe Server 4,
@@ -8708,6 +8739,7 @@ Port,Protocol,Service,Note,Reference
 4793-4799,,,Unassigned,
 4800,tcp,iims,Icona Instant Messenging System,
 4800,udp,iims,Icona Instant Messenging System,
+4800,udp,,Moxa Discovery,Moxa devices "https://technicaldocs.nozominetworks.com/products/discovery/autogenerated/topics/r_discovery_strategies_moxa.html"
 4801,tcp,iwec,Icona Web Embedded Chat,
 4801,udp,iwec,Icona Web Embedded Chat,
 4802,tcp,ilss,Icona License System Server,
@@ -8867,6 +8899,7 @@ Port,Protocol,Service,Note,Reference
 4999,tcp,hfcs-manager,HFSQL Client/Server Database Engine Manager,
 4999,udp,hfcs-manager,HFSQL Client/Server Database Engine Manager,
 5000,tcp,commplex-main,,
+5000,tcp,,FTRA Service,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
 5000,udp,commplex-main,,
 5001,tcp,commplex-link,,
 5001,udp,commplex-link,,
@@ -8888,6 +8921,7 @@ Port,Protocol,Service,Note,Reference
 5008,udp,synapsis-edge,Synapsis EDGE,
 5009,tcp,winfs,Microsoft Windows Filesystem,
 5009,udp,winfs,Microsoft Windows Filesystem,
+5009,udp,,MELSOFT protocols,Mitsubishi Electric devices "https://technicaldocs.nozominetworks.com/products/discovery/autogenerated/topics/r_discovery_strategies_melsoft.html"
 5010,tcp,telelpathstart,TelepathStart,
 5010,udp,telelpathstart,TelepathStart,
 5011,tcp,telelpathattack,TelepathAttack,
@@ -9817,6 +9851,8 @@ Port,Protocol,Service,Note,Reference
 5914,tcp,ipsdtls,Security for Internet Protocol Suite,
 5914,udp,ipsdtls,Security for Internet Protocol Suite,
 5915-5962,,,Unassigned,
+5935,tcp,,,Rockwell FactoryTalk Remote Access Servers "https://www.rockwellautomation.com/en-in/docs/factorytalk-remote-access/current/factorytalk-remote-access-help-ditamap/quick-reference-guide/what-are-the-main-protocol-settings-.html"
+5936,tcp,,FTRA Service,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
 5938,?,,TeamViewer RDP,
 5963,tcp,indy,Indy Application Server,
 5963,udp,indy,Indy Application Server,
@@ -11475,6 +11511,8 @@ Port,Protocol,Service,Note,Reference
 8442,tcp,cybro-a-bus,CyBro A-bus Protocol,
 8442,udp,cybro-a-bus,CyBro A-bus Protocol,
 8443,tcp,pcsync-https,PCsync HTTPS,
+8443,tcp,,Archive data,Lantronix Local Manager 6.7 "https://docs.lantronix.com/products/lmos/6.7/local-manager/"
+8443,tcp,,Heartbeat,Lantronix Local Manager 6.7 "https://docs.lantronix.com/products/lmos/6.7/local-manager/"
 8443,udp,pcsync-https,PCsync HTTPS,
 8444,tcp,pcsync-http,PCsync HTTP,
 8444,udp,pcsync-http,PCsync HTTP,
@@ -11635,6 +11673,7 @@ Port,Protocol,Service,Note,Reference
 8881,udp,,Reserved,
 8882,,,Unassigned,
 8883,tcp,secure-mqtt,Secure MQTT,
+8883,tcp,,MQTT (PushAgent and MQTTLogic) Secure,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
 8883,udp,secure-mqtt,Secure MQTT,
 8884-8887,,,Unassigned,
 8884,?,,MQTT,
@@ -12011,6 +12050,7 @@ Port,Protocol,Service,Note,Reference
 9599,tcp,robix,Robix,
 9599,udp,robix,Robix,
 9600,tcp,micromuse-ncpw,MICROMUSE-NCPW,
+9600,tcp,,Omron FINS,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
 9600,udp,micromuse-ncpw,MICROMUSE-NCPW,
 9601-9611,,,Unassigned,
 9612,tcp,streamcomm-ds,StreamComm User Directory,
@@ -12170,6 +12210,7 @@ Port,Protocol,Service,Note,Reference
 10000,udp,ndmp,Network Data Management Protocol,
 10001,tcp,scp-config,SCP Configuration,
 10001,udp,scp-config,SCP Configuration,
+10001,udp,,Ubiquiti Discovery,Ubiquiti devices "https://technicaldocs.nozominetworks.com/products/discovery/autogenerated/topics/r_discovery_strategies_ubiquiti.html"
 10002,tcp,documentum,EMC-Documentum Content Server Product,
 10002,udp,documentum,EMC-Documentum Content Server Product,
 10003,tcp,documentum_s,EMC-Documentum Content Server Product,
@@ -12649,6 +12690,7 @@ Port,Protocol,Service,Note,Reference
 14250,tcp,cps,Fencing Server,
 14250,udp,cps,Fencing Server,
 14251-14413,,,Unassigned,
+14273,tcp,,FTRA Service,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
 14414,tcp,ca-web-update,CA eTrust Web Update Service,
 14414,udp,ca-web-update,CA eTrust Web Update Service,
 14415-14499,,,Unassigned,
@@ -13075,6 +13117,8 @@ Port,Protocol,Service,Note,Reference
 22347,udp,wibukey,WibuKey Standard WkLan,
 22348-22349,,,Unassigned,
 22350,tcp,codemeter,CodeMeter Standard,
+22350,tcp,,CodeMeter runtime server,Rockwell FactoryTalk Activation Manager "https://activate.rockwellautomation.com/ActivationHelp/203478.htm"
+22350,udp,,CodeMeter runtime server,Rockwell FactoryTalk Activation Manager "https://activate.rockwellautomation.com/ActivationHelp/203478.htm"
 22350,udp,codemeter,CodeMeter Standard,
 22351,tcp,codemeter-cmwan,TPC/IP requests of copy protection software to a server,
 22351,udp,,Reserved,
@@ -13226,6 +13270,7 @@ Port,Protocol,Service,Note,Reference
 25100,tcp,db2c-tls,IBM Db2 Client Interface - Encrypted,
 25100,udp,,Reserved,
 25101-25470,,,Unassigned,
+25425,udp,,KOP Protocol,AutomationDirect CLICK devices "https://technicaldocs.nozominetworks.com/products/discovery/autogenerated/topics/r_discovery_strategies_automationdirect_kop.html"
 25471,sctp,rna,RNSAP User Adaptation for Iurh,
 25472-25575,,,Unassigned,
 25565,?,,MySQL,
@@ -13285,6 +13330,7 @@ Port,Protocol,Service,Note,Reference
 26489,tcp,exonet,EXOnet,
 26489,udp,exonet,EXOnet,
 26490-26999,,,Unassigned,
+27000,tcp,,Flexera Software license daemon (default port),Rockwell FactoryTalk Activation Manager "https://activate.rockwellautomation.com/ActivationHelp/203478.htm"
 27000-27009,,flex-lm,FLEX LM (1-10),
 27000,?,flex-lm,FLEX LM (1-10),
 27001,?,flex-lm,FLEX LM (1-10),
@@ -13393,11 +13439,14 @@ Port,Protocol,Service,Note,Reference
 30260,tcp,kingdomsonline,Kingdoms Online (CraigAvenue),
 30260,udp,kingdomsonline,Kingdoms Online (CraigAvenue),
 30261-30399,,,Unassigned,
+30303,udp,,Sensor Net Connect Discovery,Sensor Net Connect IoT smart sensors "https://technicaldocs.nozominetworks.com/products/discovery/autogenerated/topics/r_discovery_strategies_sensor_net_connect.html"
 30303,?,,Ethereum P2P,
 30400,tcp,gs-realtime,GroundStar RealTime System,
 30400,udp,,Reserved,
 30401-30831,,,Unassigned,
 30718,?,,Lantronix serial-to-ethernet devices,
+30718,udp,,CoLa command language,SICK devices "https://technicaldocs.nozominetworks.com/products/discovery/autogenerated/topics/r_discovery_strategies_cola2.html"
+30718,udp,ldp,Lantronix Device Discovery,Lantronix Provisioning Manager 6.x "https://docs.lantronix.com/products/lpm/6.x/getting-started/#requirements"
 30832,tcp,,Reserved,
 30832,udp,samsung-disc,Samsung Convergence Discovery Protocol,
 30833-30998,,,Unassigned,
@@ -13853,6 +13902,11 @@ Port,Protocol,Service,Note,Reference
 44601-44817,,,Unassigned,
 44818,tcp,EtherNet/IP-2,EtherNet/IP messaging,
 44818,tcp,EtherNet-IP-2,"IANA assigned this well-formed service name as a replacement for ""EtherNet/IP-2"".",
+44818,tcp,,,Rockwell ControlLogix "https://hub.digi.com/dp/path=/support/asset/application-guide--remote-cellular-tcpip-access-to-rockwell-ethernet-and-serial-devices/"
+44818,tcp,,ODVA Ethernet/IP,Rockwell "https://hub.digi.com/dp/path=/support/asset/application-guide--remote-cellular-tcpip-access-to-rockwell-ethernet-and-serial-devices/"
+44818,tcp,,Omron Ethernet/IP,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
+44818,tcp,,RA Ethernet/IP Driver,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
+44818,udp,,,Rockwell ControlLogix "https://hub.digi.com/dp/path=/support/asset/application-guide--remote-cellular-tcpip-access-to-rockwell-ethernet-and-serial-devices/"
 44818,udp,EtherNet/IP-2,EtherNet/IP messaging,
 44818,udp,EtherNet-IP-2,"IANA assigned this well-formed service name as a replacement for ""EtherNet/IP-2"".",
 44819-44899,,,Unassigned,
@@ -13954,15 +14008,21 @@ Port,Protocol,Service,Note,Reference
 48653,tcp,robotraconteur,Robot Raconteur transport,
 48653,udp,robotraconteur,Robot Raconteur transport,
 48654-48999,,,Unassigned,
+48899,udp,,ADS protocol,Beckhoff devices "https://technicaldocs.nozominetworks.com/products/discovery/autogenerated/topics/r_discovery_strategies_beckhoff.html"
 49000,tcp,matahari,Matahari Broker,
 49000,udp,,Reserved,
 49001,tcp,nusrp,Nuance Unity Service Request Protocol,
 49001,udp,nusdp-disc,Nuance Unity Service Discovery Protocol,
 49002-49149,,,Unassigned,
+49100,tcp,,ApplicationUpdateServer,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
 49150,tcp,inspider,InSpider System,
 49150,udp,,Reserved,
 49151,,,Reserved,
-49152,?,,UPnP or IPMI firmware or Apple XSAN Filesystem or Microsoft Lync,
+49152,?,,UPnP,
+49152,,,IPMI firmware,
+49152,,,Apple XSAN Filesystem,
+49152,,,Microsoft Lync,
+49153,udp,,MELSOFT protocols,Mitsubishi Electric devices "https://technicaldocs.nozominetworks.com/products/discovery/autogenerated/topics/r_discovery_strategies_melsoft.html"
 49154,?,,Apple XSAN Filesystem Access,
 49156,?,,Microsoft Distributed File System Replication (DFSR),
 49157,?,,MQTT,
@@ -14120,6 +14180,7 @@ Port,Protocol,Service,Note,Reference
 56099,?,,Telvent_OASyS_DNA,
 56645,?,,IKEd,
 58651,?,,,
+59100,tcp,,OPC UA Server,Rockwell FactoryTalk Optix "https://www.rockwellautomation.com/en-nl/docs/factorytalk-optix/current/contents-ditamap/getting-started/configuration/network-ports-configuration.html"
 59666,?,,SSH2,
 60000,?,,SCO Copy Protection Daemon,
 60001,?,,NAT-Traversal,
