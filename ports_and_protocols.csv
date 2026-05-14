@@ -12576,6 +12576,7 @@ https://www.iana.org/assignments/service-names-port-numbers/service-names-port-n
 12345,udp,italk,Italk Chat System,
 12346-12545,,,Unassigned,
 12346,?,netbus,Netbus TROJAN,
+12346,udp,vdaemon-control-plane,Cisco SD-WAN VDaemon Control Plane,""https://www.rapid7.com/blog/post/ve-cve-2026-20182-critical-authentication-bypass-cisco-catalyst-sd-wan-controller-fixed/""
 12443,?,,VMWare vSAN Data-in-Transit,
 12546,tcp,carb-repl-ctrl,Carbonite Server Replication Control,
 12546,udp,,Reserved,
